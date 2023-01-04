@@ -23,12 +23,27 @@ public class ControlFlowExercises {
 //             count2 -= 5;
 //         }while(count2 >= -10);
 
-         long count3 = 2;
-         do {
-             System.out.println(count3);
-             count3 *= count3;
-         }while(count3 < 1000000);
+//         long count3 = 2;
+//         do {
+//             System.out.println(count3);
+//             count3 *= count3;
+//         }while(count3 < 1000000);
 
+        int n = 100;
 
+        for (int i=1; i<=n; i++)
+        {
+            if (i%15==0)
+                System.out.println("FizzBuzz");
+
+            else if (i%5==0)
+                System.out.println("Buzz");
+
+            else if (i%3==0)
+                System.out.println("Fizz");
+
+            else
+                System.out.println(i);
+        }
     }
 }
