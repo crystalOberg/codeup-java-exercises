@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
@@ -29,21 +31,38 @@ public class ControlFlowExercises {
 //             count3 *= count3;
 //         }while(count3 < 1000000);
 
-        int n = 100;
+//        int n = 100;
 
-        for (int i=1; i<=n; i++)
-        {
-            if (i%15==0)
-                System.out.println("FizzBuzz");
+//        for (int i=1; i<=n; i++)
+//        {
+//            if (i%15==0)
+//                System.out.println("FizzBuzz");
 
-            else if (i%5==0)
-                System.out.println("Buzz");
+//            else if (i%5==0)
+//                System.out.println("Buzz");
 
-            else if (i%3==0)
-                System.out.println("Fizz");
+//            else if (i%3==0)
+//                System.out.println("Fizz");
 
-            else
-                System.out.println(i);
+//            else
+//                System.out.println(i);
+//        }
+
+        Scanner sorina = new Scanner(System.in);
+        int userInput = 0;
+        String playAgain = "y";
+
+        while(playAgain.equalsIgnoreCase("y")){
+            System.out.print("What number would you like to go to?");
+            userInput = sorina.nextInt();
+            System.out.println("Here is your table! \n");
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------  | ------");
+            for(int i = 1; i <= userInput; i++){
+                System.out.printf("%s    | %s    | %s    \n", i, i*i, i*i*i);
+            }
+            System.out.println("Would you like to play again?");
+            playAgain = sorina.next();
         }
     }
 }
