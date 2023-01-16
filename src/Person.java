@@ -21,21 +21,21 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person carson = new Person("Parson Carson");
-        carson.sayHello();
-        carson.setName("Carson Daley");
-        System.out.println(carson.getName());
+//        Person carson = new Person("Parson Carson");
+//        carson.sayHello();
+//        carson.setName("Carson Daley");
+//        System.out.println(carson.getName());
         ///////////////
-        Person person1 = new Person("John");
-        Person person2 = new Person("John");
-        System.out.println(person1.getName().equals(person2.getName())); //true
-        System.out.println(person1 == person2); // false
-        System.out.println(person1);
-        System.out.println(person2);
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+//        System.out.println(person1.getName().equals(person2.getName())); //true
+//        System.out.println(person1 == person2); // false
+//        System.out.println(person1);
+//        System.out.println(person2);
         //////////////
-        Person person1 = new Person("John");
-        Person person2 = person1;
-        System.out.println(person == person2); //true
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person == person2); //true
         //////////////
         Person person1 = new Person("John");
         Person person2 = person1;
