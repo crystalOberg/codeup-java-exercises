@@ -33,7 +33,7 @@ public class input {
             case ("yes"):
                 return true;
         }
-    }
+
 
     public int getInt(int min, int max) {
         int input;
@@ -56,7 +56,7 @@ public class input {
             if (input < min || input > max) {
                 System.out.println("Input invalid");
             }
-        } while (input < min || input > max) {
+        } while (input < min || input > max);
             System.out.println("Input acceptable");
             return input;
         }

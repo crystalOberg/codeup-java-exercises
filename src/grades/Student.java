@@ -12,17 +12,21 @@ public class Student {
     }
 
     //RETURNS THE STUDENT'S NAME
-    public string getName() {
+    public String getName() {
         return name;
     }
+
     // ADDS THE GIVEN GRADE TO THE GRADES PROPERTY
     public void addGrade(int grade) {
         grades.add(grade);
     }
-public double getGradeAverage() {
+
+    public double getGradeAverage() {
         double sum = 0;
         for (Integer grade : grades) {
-
+            sum += grade;
         }
-}
+
+        return sum / grades.size();
+    }
 }
