@@ -1,13 +1,18 @@
 package shapes;
 
-import util.Input;
 public class CircleApp {
-    public class CircleApp {
-        public static void main(String[] args) {
-            Input input = new Input();
-            System.out.println("Let's get a radius for our circle:");
-            Circle circle = new Circle(input.getDouble());
-            System.out.printf("Circle's area: %f; Circle's circumference: %f.%n", circle.getArea(), circle.getCircumference());
-        }
-    }
+    public static void main(String[] args) {
+        Input input = new Input();
+        Circle aCircle;
 
+        while(input.yesNo()){
+            aCircle = new Circle(input.getDouble());
+            System.out.println("aCircle.getArea() = " + aCircle.getArea());
+            System.out.println("aCircle.getCircumference() = " + aCircle.getCircumference());
+
+        }
+
+        System.out.println("Circle.getCount() = " + Circle.getCount());
+
+    }
+}

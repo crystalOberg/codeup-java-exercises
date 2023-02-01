@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class input {
     private Scanner scanner;
+    private boolean prompt;
 
     public input() {
 
@@ -23,7 +24,7 @@ public class input {
         return this.scanner.nextLine();
     }
 
-    public boolean yesNo() {
+    public int yesNo() {
         System.out.println("Yes or No?");
         String input = this.scanner.nextLine();
         input = input.toLowerCase();
